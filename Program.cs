@@ -1,8 +1,3 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
-
-app.MapGet("/", () => "Hello AWS AppRunner !!");
-
 app.MapGet("/api/coffee", () => new List<dynamic> {
     new { CoffeeId = "cappucino", CoffeeName = "Cappucino" },
     new { CoffeeId = "latte", CoffeeName = "Latte" },
